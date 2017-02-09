@@ -1,0 +1,21 @@
+{
+  "name": "trollpurse-website",
+  "version": "1.0.0",
+  "description": "website for trollpurse.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://trollpurse@bitbucket.org/trollpurse/website.git"
+  },
+  "author": "Troll Purse",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/trollpurse/website#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-minify": "0.0.15"
+  }
+}
