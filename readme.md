@@ -5,3 +5,4 @@ Website for trollpurse.com, does not include blogs or forums.
 * Do pull requests.
 * Don't steal code.
 * Be nice.
+* No cussing.
