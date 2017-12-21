@@ -11,7 +11,7 @@ gulp.task('cleanDest', function() {
 gulp.task('minifyHTML', function() {
 	return gulp.src('html/*.html')
 		.pipe(minifyHTML({collapseWhitespace: true}))
-		.pipe(gulp.dest('built/html/'));
+		.pipe(gulp.dest('built/'));
 });
 
 gulp.task('minifyJS', function() {
@@ -26,7 +26,7 @@ gulp.task('minifyJS', function() {
 });
 
 gulp.task('minifyIMG', function() {
-	return gulp.src('images/*')
+	return gulp.src(['images/**/*.*', 'html/*.ico'])
 		.pipe(minifyIMG())
 		.pipe(gulp.dest('built/images/'));
 		
