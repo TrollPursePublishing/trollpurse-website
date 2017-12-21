@@ -3,6 +3,8 @@ var clean = require('del');
 var minifyJS = require('gulp-minify');
 var minifyHTML = require('gulp-htmlmin');
 var minifyIMG = require('gulp-imagemin');
+var zip = require('gulp-zip');
+var runSequence = require('run-sequence');
 
 gulp.task('cleanDest', function() {
 	return clean(['built/**/*']);
@@ -12,6 +14,12 @@ gulp.task('minifyHTML', function() {
 	return gulp.src('html/*.html')
 		.pipe(minifyHTML({collapseWhitespace: true}))
 		.pipe(gulp.dest('built/'));
+});
+
+gulp.task('zipLogos', function() {
+    gulp.src('built/images/logos/**/*.png')
+        .pipe(zip('TROLLPURSE_LOGOS.zip'))
+        .pipe(gulp.dest('built/images/logos/'))
 });
 
 gulp.task('minifyJS', function() {
@@ -32,4 +40,8 @@ gulp.task('minifyIMG', function() {
 		
 });
 
-gulp.task('build', ['cleanDest', 'minifyHTML', 'minifyJS', 'minifyIMG']);
+gulp.task('build', function(done){
+	runSequence('cleanDest', ['minifyHTML', 'minifyJS', 'minifyIMG'], 'zipLogos', function() {
+		done();
+	});
+});
