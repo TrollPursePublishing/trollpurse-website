@@ -1,6 +1,3 @@
-#Troll Purse Website
-Website for [trollpurse.com](https://www.trollpurse.com/), does not include blogs or forums.
+# Troll Purse Website
 
-#Rules ### Nobody Needs 'Em
-* Do pull requests.
-* Don't steal code.
+Public Website for [trollpurse.com](http://www.trollpurse.com/).
