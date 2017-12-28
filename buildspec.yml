@@ -13,6 +13,6 @@ phases:
       - gulp build
 artifacts:
   files:
-    - /**/*
+    - **/*
   discard-paths: no
   base-directory: built
