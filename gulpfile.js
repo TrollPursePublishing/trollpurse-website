@@ -11,7 +11,7 @@ gulp.task('cleanDest', function() {
 });
 
 gulp.task('minifyHTML', function() {
-	return gulp.src('html/*.html')
+	return gulp.src(['html/*.html', 'html/robots.txt'])
 		.pipe(minifyHTML({collapseWhitespace: true}))
 		.pipe(gulp.dest('built/'));
 });
