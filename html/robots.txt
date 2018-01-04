@@ -1,5 +1,2 @@
 User-Agent: *
-Disallow: /images
-
-User-Agent: *
 Allow: /
