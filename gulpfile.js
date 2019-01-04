@@ -19,7 +19,7 @@ gulp.task('minifyHTML', function() {
 
 gulp.task('minifyCSS', function(){
 	return gulp.src(['css/*.css'])
-		.pipe(cleanCSS({compatibility: 'ie8'}))
+		// .pipe(cleanCSS({compatibility: 'ie8'})) TODO: it doesn't work in Chrome in prod
 		.pipe(gulp.dest('built/css'));
 });
 
