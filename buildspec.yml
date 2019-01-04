@@ -4,9 +4,6 @@ phases:
   install:
     commands:
       - npm install --global gulp-cli
-  pre_build:
-    commands:
-      - npm install
   build:
     commands:
       - npm install

@@ -72,3 +72,28 @@ footer.page-footer h5 {
 footer.page-footer h6 {
     color: #bdd09f;
 }
+
+div.card {
+    background-color: #b99c6b;
+}
+
+button.btn {
+    background-color: #668d3c;
+    color: whitesmoke
+}
+
+button.btn:hover {
+    background-color: #bdd09f;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    color: #613318 !important;
+}
+
+.btn:hover, .btn-large:hover {
+    background-color: #2bbbad;
+}
+
+a {
+    color: #4e6172
+}
