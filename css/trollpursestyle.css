@@ -1,22 +1,13 @@
-body
-div.navbar-fixed >
-nav {
+body div.navbar-fixed > nav {
     background-color: #613318;
     color: #bdd09f;
 }
 
-body
-div.navbar-fixed >
-nav
-.brand-logo {
+body div.navbar-fixed > nav .brand-logo {
     color: #bdd09f;
 }
 
-body
-div.navbar-fixed >
-nav
-ul
-a {
+body div.navbar-fixed > nav ul a {
     color: #bdd09f;
 }
 
@@ -24,33 +15,27 @@ body {
     background-color:  #bdd09f !important;
 }
 
-body
-h1 {
+body h1 {
     color: #613318;
 }
 
-body
-h2 {
+body h2 {
     color: #613318;
 }
 
-body
-h3 {
+body h3 {
     color: #613318;
 }
 
-body
-h4 {
+body h4 {
     color: #613318;
 }
 
-body
-h5 {
+body h5 {
     color: #613318;
 }
 
-body
-h6 {
+body h6 {
     color: #613318;
 }
 
@@ -59,38 +44,31 @@ footer.page-footer {
     color: #bdd09f;
 }
 
-footer.page-footer >
-div.page-copyright {
+footer.page-footer > div.page-copyright {
     background-color: #613318;
     color: #bdd09f;
 }
 
-footer.page-footer
-h1 {
+footer.page-footer h1 {
     color: #bdd09f;
 }
 
-footer.page-footer
-h2 {
+footer.page-footer h2 {
     color: #bdd09f;
 }
 
-footer.page-footer
-h3 {
+footer.page-footer h3 {
     color: #bdd09f;
 }
 
-footer.page-footer
-h4 {
+footer.page-footer h4 {
     color: #bdd09f;
 }
 
-footer.page-footer
-h5 {
+footer.page-footer h5 {
     color: #bdd09f;
 }
 
-footer.page-footer
-h6 {
+footer.page-footer h6 {
     color: #bdd09f;
 }
