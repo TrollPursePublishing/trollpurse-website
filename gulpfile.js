@@ -3,6 +3,7 @@ var clean = require('del');
 var minifyJS = require('gulp-minify');
 var minifyHTML = require('gulp-htmlmin');
 var minifyIMG = require('gulp-imagemin');
+var cleanCSS = require('gulp-clean-css');
 var zip = require('gulp-zip');
 var runSequence = require('run-sequence');
 
@@ -14,6 +15,12 @@ gulp.task('minifyHTML', function() {
 	return gulp.src(['html/*.html'])
 		.pipe(minifyHTML({collapseWhitespace: true}))
 		.pipe(gulp.dest('built/'));
+});
+
+gulp.task('minifyCSS', function(){
+	return gulp.src(['css/*.css'])
+		.pipe(cleanCSS({compatibility: 'ie8'}))
+		.pipe(gulp.dest('built/css'));
 });
 
 gulp.task('copyRobots', function() {
@@ -46,7 +53,7 @@ gulp.task('minifyIMG', function() {
 });
 
 gulp.task('build', function(done){
-	runSequence('cleanDest', ['minifyHTML', 'minifyJS', 'minifyIMG', 'copyRobots'], 'zipLogos', function() {
+	runSequence('cleanDest', ['minifyHTML', 'minifyJS', 'minifyCSS', 'minifyIMG', 'copyRobots'], 'zipLogos', function() {
 		done();
 	});
 });

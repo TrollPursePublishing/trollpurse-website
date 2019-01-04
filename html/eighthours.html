@@ -116,14 +116,14 @@
 	<footer class="page-footer black white-text">
 		<div class="container">
 			<div class="row">
-				<div class="col s5">
-					<h3>Connect with us</h3>
+				<div class="col s6">
+					<h3>Connect<span class="hide-on-med-and-down"> with us</span></h3>
 					<div class="row">
-						<div class="col s9">
-							<iframe class="hide-on-med-and-down" src="https://discordapp.com/widget?id=400025748062208010&theme=dark" width="250"
-							 height="300" allowtransparency="true" frameborder="0"></iframe>
+						<div class="col m6 hide-on-med-and-down">
+							<iframe src="https://discordapp.com/widget?id=400025748062208010&theme=dark" width="250" height="320"
+							 allowtransparency="true" frameborder="0"></iframe>
 						</div>
-						<div class="col s12">
+						<div class="col s12 m6">
 							<div>
 								<a href="https://twitter.com/trollpurse?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow
 									@trollpurse</a>
@@ -138,28 +138,38 @@
 							</div>
 						</div>
 					</div>
+					<div class="row hide-on-med-and-down">
+						<div class="col s12">
+							<a href="https://www.reddit.com/r/trollpurse" target="_blank" class="orange darken-3 white-text center-align col s1"
+							 title="View Troll Purse on Reddit">
+								<i class="fa fa-reddit-alien"></i>
+							</a>
+
+							<a href="https://github.com/TrollPursePublishing" target="_blank" class="black white-text center-align col s1"
+							 title="View Troll Purse on Github">
+								<i class="fa fa-github-square"></i>
+							</a>
+							<a href="https://plus.google.com/109869658898421237832" target="_blank" class="red white-text center-align col s1"
+							 title="View Troll Purse on Google+">
+								<i class="fa fa-google-plus-official"></i>
+							</a>
+							<a href="https://trollpurse.tumblr.com/" target="_blank" class="indigo darken-3 white-text center-align col s1"
+							 title="View Troll Purse on Tumblr">
+								<i class="fa fa-tumblr"></i>
+							</a>
+							<a href="https://www.instagram.com/trollpurse/" target="_blank" class="white black-text center-align col s1"
+							 title="View Troll Purse on Instagram">
+								<i class="fa fa-instagram"></i>
+							</a>
+							<a href="https://www.twitch.tv/trollpurse" target="_blank" class="purple white-text center-align col s1" title="View Troll Purse on Twitch">
+								<i class="fa fa-twitch"></i>
+							</a>
+						</div>
+					</div>
 				</div>
-				<div class="col s7 hide-on-med-and-down">
-					<h3>Get more social</h3>
-					<a href="https://www.reddit.com/r/trollpurse" target="_blank" class="orange darken-3 white-text center-align col s1"
-					 title="View Troll Purse on Reddit">
-						<i class="fa fa-reddit-alien"></i>
-					</a>
-					<a href="https://www.instagram.com/trollpurse/" target="_blank" class="white black-text center-align col s1" title="View Troll Purse on Instagram">
-						<i class="fa fa-instagram"></i>
-					</a>
-					<a href="https://github.com/TrollPursePublishing" target="_blank" class="black white-text center-align col s1"
-					 title="View Troll Purse on Github">
-						<i class="fa fa-github-square"></i>
-					</a>
-					<a href="https://plus.google.com/109869658898421237832" target="_blank" class="red white-text center-align col s1"
-					 title="View Troll Purse on Google+">
-						<i class="fa fa-google-plus-official"></i>
-					</a>
-					<a href="https://trollpurse.tumblr.com/" target="_blank" class="indigo darken-3 white-text center-align col s1"
-					 title="View Troll Purse on Tumblr">
-						<i class="fa fa-tumblr"></i>
-					</a>
+				<div class="col s6 hide-on-med-and-down">
+					<h3>About us</h3>
+					<p>Troll Purse is a small hobby game developer. All we do is make some games and game-like tools for all to enjoy.</p>
 				</div>
 			</div>
 		</div>
@@ -169,10 +179,18 @@
 			</div>
 		</div>
 	</footer>
-	<script async src="https://apis.google.com/js/platform.js"></script>
-	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	<div id="fb-root"></div>
 	<script type="text/javascript" src="js/asyncload.js"></script>
+	<script async src="https://apis.google.com/js/platform.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/asyncload.js"></script>
+	<script>(function (d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 	<script type="text/javascript">
 		(function () {
 			asyncload("https://code.jquery.com/jquery-2.1.1.min.js", function () {
@@ -186,10 +204,10 @@
 	</script>
 	<script async>
 		(function (i, s, o, g, r, a, m) {
-		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-			(i[r].q = i[r].q || []).push(arguments)
-		}, i[r].l = 1 * new Date(); a = s.createElement(o),
-			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
 		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
 		ga('create', 'UA-91259139-1', 'auto');
