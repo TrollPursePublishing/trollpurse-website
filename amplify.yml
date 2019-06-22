@@ -12,6 +12,23 @@ frontend:
       - ./**/*
     discard-paths: yes
     baseDirectory: built
+  customHeaders:
+    - pattern: '*.js'
+      headers:
+      - key: 'content-type'
+        value: 'application/javascript'
+    - pattern: '*.html'
+      headers:
+      - key: 'content-type'
+        value: 'text/html'
+    - pattern: '*.css'
+      headers:
+      - key: 'content-type'
+        value: 'text/css'
+    - pattern: '*.png'
+      headers:
+      - key: 'content-type'
+        value: 'image/png'
   cache:
     paths:
       - ./node_modules
