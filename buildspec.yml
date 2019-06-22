@@ -13,7 +13,7 @@ artifacts:
   files:
     - ./**/*
   discard-paths: no
-  base_directory: built
+  base-directory: built
 cache:
   paths:
     - ./node_modules    
