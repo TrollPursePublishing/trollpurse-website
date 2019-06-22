@@ -20,8 +20,7 @@
     "gulp-clean-css": "4.2.0",
     "gulp-htmlmin": "3.0.0",
     "gulp-imagemin": "6.0.0",
-    "gulp-minify": "0.0.15",
-    "gulp-zip": "4.0.0",
-    "run-sequence": "2.2.0"
+    "gulp-minify": "3.1.0",
+    "gulp-zip": "5.0.0"
   }
 }
