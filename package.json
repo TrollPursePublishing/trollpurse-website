@@ -4,6 +4,7 @@
   "description": "website for trollpurse.com",
   "main": "index.js",
   "scripts": {
+    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,16 +12,16 @@
     "url": "git+https://trollpurse@bitbucket.org/trollpurse/website.git"
   },
   "author": "Troll Purse",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "homepage": "https://bitbucket.org/trollpurse/website#readme",
   "devDependencies": {
-    "del": "^2.2.2",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^4.0.0",
-    "gulp-htmlmin": "^3.0.0",
-    "gulp-imagemin": "^3.1.1",
+    "del": "2.2.2",
+    "gulp": "4.0.2",
+    "gulp-clean-css": "4.2.0",
+    "gulp-htmlmin": "3.0.0",
+    "gulp-imagemin": "6.0.0",
     "gulp-minify": "0.0.15",
-    "gulp-zip": "^4.0.0",
-    "run-sequence": "^2.2.0"
+    "gulp-zip": "4.0.0",
+    "run-sequence": "2.2.0"
   }
 }

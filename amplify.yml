@@ -1,0 +1,17 @@
+version: 0.1
+frontend:
+  phases:
+    build:
+      commands:
+        - echo "$NODE_ENV"
+        - npm install
+        - npm run build
+  artifacts:
+    files:
+      - ./**/*
+    discard-paths: no
+    base-directory: built
+    cache:
+      paths:
+        - ./node_modules
+        
