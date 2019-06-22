@@ -10,7 +10,7 @@ frontend:
   artifacts:
     files:
       - ./**/*
-    discard-paths: no
+    discard-paths: yes
     baseDirectory: built
   cache:
     paths:
