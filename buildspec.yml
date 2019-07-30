@@ -11,10 +11,11 @@ phases:
     commands:
       - npm run build
 artifacts:
+  name: BuildOutput
   files:
-    - ./**/*
+    - '**/*'
   discard-paths: no
-  baseDirectory: built
+  base-directory: 'built'
 cache:
   paths:
     - ./node_modules
