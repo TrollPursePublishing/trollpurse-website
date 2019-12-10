@@ -1,8 +1,9 @@
 version: 0.2
+
 phases:
   install:
     runtime-versions:
-      nodejs: 8
+      nodejs: 10
   pre_build:
     commands:
       - npm ci
@@ -10,10 +11,11 @@ phases:
     commands:
       - npm run build
 artifacts:
+  name: BuildOutput
   files:
-    - ./**/*
+    - '**/*'
   discard-paths: no
-  base-directory: built
+  base-directory: 'built'
 cache:
   paths:
-    - ./node_modules    
+    - ./node_modules
